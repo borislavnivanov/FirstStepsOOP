@@ -19,7 +19,8 @@ class Band:
                     return 'Album has been published. It cannot be removed.'
                 self.albums.remove(album)
                 return f'Album {album_name} has been removed.'
-            return 'Album {name} is not found.'
+        return f'Album {album_name} is not found.'
+
 
     def details(self) -> str:
         formated_str = [f'Band {self.name}']
